@@ -1,0 +1,13 @@
+# The name of this app. Must be unique within a project.
+name: "php"
+
+type: php
+build:
+    flavor: composer
+web:
+  document_root: "/"
+  passthru: "/index.php"
+
+relationships:
+    database: "mysql:mysql"
+disk: 2048
